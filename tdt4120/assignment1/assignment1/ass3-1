@@ -1,0 +1,52 @@
+#B = [1, 4, 3, 4, 7, 2, 1]
+x = [1 2; 4 5; 3 2]
+y = [2 2; 4 5; 3 2 ; 2 6]
+size_x = size(x) 
+size_y = size(y)
+size_x[1] + size_x[1] 
+
+
+z = vcat(x, y)
+print(z)
+
+
+#=
+
+function mergearrays(x, y, co)
+    if 
+
+
+end
+
+function mergesort(x, co)
+    if co == 1
+
+
+end
+#=
+
+
+
+#=
+A = [10, 5, 16, 0]
+X = []
+maxnumber = 8
+println(A)
+
+for i = 1:length(A)
+    var = pop!(A)
+    push!(X, var)
+end
+
+println(A)
+println(X)
+for k = 1:length(X)
+    if X[k] > maxnumber
+        X[k] = maxnumber 
+    end
+end
+println(X)
+=#
+
+
+

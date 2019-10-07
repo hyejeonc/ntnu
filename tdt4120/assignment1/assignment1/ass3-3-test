@@ -1,0 +1,21 @@
+function bruteforce(x)
+    n = length(x[:, 1])
+    l_i = 0
+    l = 0
+    for i = 1:n-1
+        println("i = ", i)
+        for j = i+1:n
+            println("j = ", j)
+            l = (x[i, 1] - x[j, 1])^2 + (x[i , 2] - x[j, 2])^2
+            if (i == 1 && j == 2) || (l_i > l)
+                l_i = l
+                println("l_i is = ", l_i)
+            end
+        end
+    end
+
+    return l_i^0.5
+end
+
+x = [1 1; 10 0; 2 2; 5 5]
+println(bruteforce(x))
