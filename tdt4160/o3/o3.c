@@ -50,7 +50,16 @@ void time_to_string(char *timestamp, int h, int m, int s) {
 int main(void) {
     init();
     // Skriv din kode her...
-    
+
+    GPIO_map = (gpio_map_t*) GPIO_BASE;
+
+    //Start system clock
+    volatile systick_t* sys_tick;
+    sys_tick = (systick_t*) SYSTICK_BASE;
+    sys_tick->CTRL = 0b0111;
+    sys_tick->LOAD = FREQUENCY;
+
+
     return 0;
 }
 
